@@ -15,11 +15,14 @@ body#page-enrol-index {
     }
 }
 
+body.pagelayout-popup {
+    margin-left: 0;
+}
 /*******************
 Pages
 *******************/
 #page {
-    margin-top: 40px;
+    margin-top: 70px;
 
     &.container-fluid {
         padding: 2rem 2rem 0 2rem;
