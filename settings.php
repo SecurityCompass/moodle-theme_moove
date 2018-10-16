@@ -190,11 +190,11 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
-    // Bannercontent.
+    // Bannercontent. 
     $name = 'theme_moove/bannercontent';
     $title = get_string('bannercontent', 'theme_moove');
     $description = get_string('bannercontentdesc', 'theme_moove');
-    $default = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.';
+    $default = 'Our training suites in software security cover OWASP Top 10, secure software design, secure software coding, and other courses that cater to specific roles in order to help improve an organization’s security posture. Whether your team is responsible for developing mobile or web applications securely, at Security Compass, we’ve got you covered.';
     $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -202,7 +202,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_moove/displaymarketingbox';
     $title = get_string('displaymarketingbox', 'theme_moove');
     $description = get_string('displaymarketingboxdesc', 'theme_moove');
-    $default = 1;
+    $default = 0;
     $choices = array(0 => 'No', 1 => 'Yes');
     $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
     $page->add($setting);
@@ -577,7 +577,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_moove/getintouchcontent';
     $title = get_string('getintouchcontent', 'theme_moove');
     $description = get_string('getintouchcontentdesc', 'theme_moove');
-    $default = 'Conecti.me';
+    $default = 'Security Compass';
     $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -586,7 +586,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_moove/website';
     $title = get_string('website', 'theme_moove');
     $description = get_string('websitedesc', 'theme_moove');
-    $default = 'http://conecti.me';
+    $default = 'https://www.securitycompass.com';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -595,7 +595,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_moove/mobile';
     $title = get_string('mobile', 'theme_moove');
     $description = get_string('mobiledesc', 'theme_moove');
-    $default = 'Mobile : +55 (98) 00123-45678';
+    $default = 'Mobile : +1 888-505-0433';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -604,7 +604,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_moove/mail';
     $title = get_string('mail', 'theme_moove');
     $description = get_string('maildesc', 'theme_moove');
-    $default = 'willianmano@conectime.com';
+    $default = 'info@securitycompass.com';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -613,7 +613,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_moove/facebook';
     $title = get_string('facebook', 'theme_moove');
     $description = get_string('facebookdesc', 'theme_moove');
-    $default = '';
+    $default = 'https://facebook.com';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);

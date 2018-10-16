@@ -31,6 +31,7 @@ $string['choosereadme'] = 'Moove is a modern highly-customisable theme. This the
 $string['currentinparentheses'] = '(current)';
 $string['region-side-pre'] = 'Right';
 $string['login'] = 'Already have an account?';
+$string['forgotten'] = 'Already have your account?'; 
 $string['prev_section'] = 'Previous section';
 $string['next_section'] = 'Next section';
 $string['search_site'] = 'Search on site';
