@@ -14,7 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
-{{! 
+{{!
     @template theme_moove/frontpage_guest
 
     Guest frontpage template.
@@ -64,8 +64,12 @@
             {{^sliderenabled}}
                 <div class="row" id="loginbox">
                     <div class="col-sm-12 col-md-7 hidden-sm-down" id="intro">
-                        <h1>Perfect Learning System</h1>
-                        <h2>Our training suites in software security cover OWASP Top 10, secure software design, secure software coding, and other courses that cater to specific roles in order to help improve an organization’s security posture. Whether your team is responsible for developing mobile or web applications securely, at Security Compass, we’ve got you covered.</h2> 
+                        {{#bannerheading}}
+                            <h1>{{{ bannerheading }}}</h1>
+                         {{/bannerheading}}
+                         {{#bannercontent}}
+                            <h2>{{{ bannercontent }}}</h2>
+                        {{/bannercontent}}
                     </div>
                     <div class="col-12 col-sm-12 col-md-5 card d-none d-lg-block" id="boxForm">
                         {{>theme_moove/frontpage_login}}
@@ -136,5 +140,4 @@
 
         {{>theme_moove/frontpage_sponsorsclients}}
     </div>
- 
 {{>theme_moove/inc_end}}
